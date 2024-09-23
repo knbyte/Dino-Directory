@@ -74,7 +74,6 @@ h1 {
   font-style: normal;
   color: rgba(205, 254, 194, 0.8);
   font-size: 3em;
-
   text-shadow: 2px 2px 4px #0b2415; /* x-offset, y-offset, blur radius, color */
 }
 
@@ -86,7 +85,18 @@ h1 {
   font-family: "Jacques Francois Shadow", serif;
   font-weight: 400;
   font-style: normal;
-  color: black;
+  color: rgba(9, 100, 52, 0.8);
+  text-shadow: 1px 1px 1px rgba(82, 133, 71, 0.8);
+}
+
+.searchResult h2 {
+  text-shadow: 2px 2px 2px rgba(9, 100, 52, 0.8) !important;
+  color: rgba(205, 254, 194, 0.8);
+}
+
+.searchResult p {
+  padding-left: 40px;
+  padding-right: 30px;
 }
 
 h2 {
@@ -97,6 +107,22 @@ h2 {
   font-size: 1.5em;
   text-shadow: 1px 1px 1px rgba(123, 177, 111, 0.8);
   padding-bottom: 20px;
+}
+
+main h2 {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: rgba(205, 254, 194, 0.8);
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px rgba(123, 177, 111, 0.8);
+  padding-bottom: 20px;
+  line-height: 30px;
 }
 /*
 #81A186
@@ -245,7 +271,8 @@ input[type="submit"] {
 button {
   margin: 25px;
   padding: 10px;
-  color: rgba(205, 254, 194);
+  color: rgba(205, 254, 194, 0.8);
+  text-shadow: 2px 2px 4px #0b2415;
   font-family: "Rubik Bubbles", system-ui;
   font-weight: 400;
   font-style: normal;
