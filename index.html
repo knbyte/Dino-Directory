@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Database</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Kalnia+Glaze:wght@100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="./pages/directory.html">Dino Directory</a></li>
+		<li><a href="./pages/references.html">References</a></li>
+		<li><a href="https://github.com/knbyte" target="_blank">GitHub</a></li>
+      </ul>
+    </nav>
+    <header></header>
+    <main>
+      <h1><span class="upper-h1">Welcome to the</span><br>Dino Database!</h1>
+        <h2>From the tall Brachiosaurus to the gentle Triceratops, <br>
+		search for your favorite dinosaur and learn about its<br>
+		habitat, diet, and unique characteristics.
+      </h2>
+      <form>
+        <input
+          type="search"
+          id="dinoSearch"
+          placeholder="What dino are you looking for?"
+        />
+        <input type="submit" value="Search!" />
+      </form>
+<div class="searchResult">
+	<div class="searchContent">
+        <div class="text">
+          <h1>Search for a dinosaur!</h1>
+          <h2>Learn about one of your favourite prehistoric creatures.</h2>
+          <p>
+            Enter a dinosaur name in the search bar above to find out more.
+            Alternately you can look through the full Dino Directory in the
+            navigation bar above, or click the button below to learn about
+            the dinosaur of the day! All images are clickable and will take
+			you straight to the image's source.
+          </p>
+        </div>
+		<div class="image">
+          <a href="https://en.wikipedia.org/wiki/File:Plesiosaurus_3DB.jpg" target="_blank"><img
+            class="img"
+            src="./media/main_img.svg"
+            alt="Dinosaur Image"
+          /></a>
+          <!--Seperate link and image version 
+		    <img
+            class="img"
+            src="./media/plesiosaurus_default.jpg"
+            alt="Dinosaur Image"
+			href="http://dinopit.com/dinosaurs/plesiosaurus"
+          />
+		  <a
+            class="imglink"
+            target="_blank"
+            href="http://dinopit.com/dinosaurs/plesiosaurus"
+          >
+            Image Source
+          </a>-->
+        </div>
+		</div>
+      </div>
+      <!--FLEXI GRID SEARCH RESULT VERSION!!
+	  
+	  <div class="searchResult">
+        <div class="left">
+          <img
+            class="img"
+            src="./media/plesiosaurus_default.jpg"
+            alt="Dinosaur Image"
+          />
+          <a
+            class="imglink"
+            target="_blank"
+            href="http://dinopit.com/dinosaurs/plesiosaurus"
+          >
+            Image Source
+          </a>
+        </div>
+        <div class="right">
+          <h1>Search for a dinosaur!</h1>
+          <h2>Learn about one of your favourite prehistoric creatures.</h2>
+          <p>
+            Enter a dinosaur name in the search bar above to find out more.
+            <br />
+            Alternately you can look through the full Dino Directory in the
+            navigation bar above, <br />or click the button below to learn about
+            the dinosaur of the day!
+          </p>
+        </div>
+      </div>-->
+      <p><button>Click here to see<br>the Dino of the Day!</button></p>
+    </main>
+  </body>
+  <footer>
+    <p>Coded by <a href="https://github.com/knbyte" target="_blank">Kai Aydan</a> | 2024</p>
+    </ul>
+  </footer>
+</html>

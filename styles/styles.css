@@ -1,0 +1,333 @@
+/****************************************************************/
+/*                         MAIN CONTENT                         */
+/****************************************************************/
+
+html {
+  scroll-padding-top: 100px;
+}
+
+/*************************    HEADER    *************************/
+
+header {
+  padding: 20px;
+}
+
+/*************************     NAV      *************************/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(41, 78, 70, 0.9);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin: 0px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgba(205, 254, 194, 1);
+}
+
+/*************************     BODY     *************************/
+body {
+  /* light???  background-color: rgba(205, 254, 194, 0.8);
+  (30, 130, 76, 08);
+  */
+  /*background-color: rgba(30, 130, 76, 0.8); */
+  background-color: rgba(9, 100, 52, 0.8);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*************************    FOOTER    *************************/
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  text-align: center;
+  color: rgba(205, 254, 194);
+  padding: 10px;
+  margin: 0px;
+  /*text-shadow: 1px 1px 1px rgba(123, 177, 111, 0.8);*/
+}
+
+footer a {
+  color: rgb(33, 66, 59);
+}
+
+/****************************************************************/
+/*                          TYPEOGRAPHY                         */
+/****************************************************************/
+
+h1 {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(205, 254, 194, 0.8);
+  font-size: 3em;
+
+  text-shadow: 2px 2px 4px #0b2415; /* x-offset, y-offset, blur radius, color */
+}
+
+.upper-h1 {
+  font-size: 0.8em;
+}
+
+.searchResult h1 {
+  font-family: "Jacques Francois Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: rgba(205, 254, 194, 0.8);
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px rgba(123, 177, 111, 0.8);
+  padding-bottom: 20px;
+}
+/*
+#81A186
+#57737E
+#6F5761
+#57737E
+
+*/
+
+/****************************************************************/
+/*                          SEARCH BAR                          */
+/****************************************************************/
+
+form {
+  margin: 20px;
+}
+
+input[type="search"] {
+  width: 40%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid rgba(41, 78, 70);
+  box-shadow: 2px 2px rgba(41, 78, 70, 0.5);
+  background-color: rgba(205, 254, 194, 0.6);
+  border-radius: 5px;
+}
+
+input[type="search"]:focus {
+  outline: none;
+  background-color: rgba(205, 254, 194, 0.6) !important;
+}
+
+input[type="submit"] {
+  width: 15%;
+  color: rgba(41, 78, 70);
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid rgba(41, 78, 70);
+  box-shadow: 2px 2px rgba(41, 78, 70, 0.5);
+  border-radius: 5px;
+  background-color: rgba(205, 254, 194, 0.6);
+}
+/****************************************************************/
+/*                         SEARCH RESULT                        */
+/****************************************************************/
+
+.searchResult {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid 3px rgba(41, 78, 70);
+  margin: 40px 20px 40px 20px;
+
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+  transform: rotate(1deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in;
+}
+
+.searchResult:hover {
+  transform: translateY(-10px) rotate(0deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.searchResult .text {
+  padding: 20px;
+}
+
+.searchResult img {
+  max-width: 50vw;
+  display: block;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.searchResult h1 {
+  font-family: "Jacques Francois Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(33, 66, 59);
+}
+
+/*old imglink version
+.imglink {
+  position: relative;
+  top: -20px;
+  font-size: 10px;
+  color: blueviolet;
+}*/
+/* FLEXI GRID SEARCH RESULT VERSION!
+
+.searchResult {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: solid 1px black;
+  margin: 40px 20px 40px 20px;
+}
+
+.searchResult .right {
+  text-align: center;
+  flex: 1;
+}
+
+.searchResult .left {
+  padding: 20px;
+}
+
+.searchResult img {
+  max-width: 30vw;
+  display: block;
+}
+
+.searchResult h1 {
+  font-family: "Jacques Francois Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.imglink {
+  position: relative;
+  top: -20px;
+  font-size: 10px;
+  color: blueviolet;
+} */
+
+/****************************************************************/
+/*                             MEDIA                            */
+/****************************************************************/
+
+@media (max-width: 600px) {
+  .searchResult {
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: center; /* Center elements horizontally */
+  }
+}
+
+/****************************************************************/
+/*                             BUTTON                            */
+/****************************************************************/
+
+button {
+  margin: 25px;
+  padding: 10px;
+  color: rgba(205, 254, 194);
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: transparent;
+  border: solid 3px rgba(41, 78, 70);
+  font-size: 2em;
+  padding: 12px;
+  border-radius: 50px;
+  transform: rotate(1deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in;
+}
+
+button:hover {
+  background-color: rgba(30, 59, 23, 0.3);
+  transition: all 200ms ease-in-out;
+  transform: translateY(-10px) rotate(0deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+/****************************************************************/
+/*                             LISTS                            */
+/****************************************************************/
+
+ul {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/****************************************************************/
+/*                       BASE GOOGLE FONTS                      */
+/****************************************************************/
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Kalnia+Glaze:wght@100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
+Kalnia Glaze: CSS class for a variable style
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.kalnia-glaze-<uniquifier> {
+  font-family: "Kalnia Glaze", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+Rubik Bubbles: CSS class
+
+.rubik-bubbles-regular {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+Jacques Francois Shadow: CSS class
+
+.jacques-francois-shadow-regular {
+  font-family: "Jacques Francois Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+Open Sans: CSS class for a variable style
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+*/
