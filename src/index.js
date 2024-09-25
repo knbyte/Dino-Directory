@@ -138,6 +138,97 @@ const dinosaurs = [
     p: "We are working on adding this creature to the directory.",
     img: "media/main_img.svg",
   },
+
+  {
+    h1: "Deinotherium",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Indricotherium",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Uintatherium",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Entelodont",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Baryonyx",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Carnotaurus",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Compsognathus",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Dilophosaurus",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Iguanodon",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Protoceratops",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Styracosaurus",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Ankylosaurus",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Pachycephalosaurus",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Troodon",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
+  {
+    h1: "Oviraptor",
+    h2: "Hold tight!",
+    p: "We are working on adding this creature to the directory.",
+    img: "media/main_img.svg",
+  },
 ];
 function updateSearchResults() {
   event.preventDefault();
@@ -183,3 +274,25 @@ function updateSearchResults() {
 
 let element = document.querySelector("input[type=submit]");
 element.addEventListener("click", updateSearchResults);
+
+// GET RANDOM DINO:
+
+document
+  .getElementById("randomDino")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const randomIndex = Math.floor(Math.random() * dinosaurs.length);
+    const randomDino = dinosaurs[randomIndex];
+
+    let dinoDiv = document.getElementById("dinoInfo");
+    let h1 = dinoDiv.querySelector("h1");
+    let h2 = dinoDiv.querySelector("h2");
+    let p = dinoDiv.querySelector("p");
+    let img = dinoDiv.querySelector("img");
+
+    h1.textContent = randomDino.h1;
+    h2.textContent = randomDino.h2;
+    p.textContent = randomDino.p;
+    img.src = randomDino.img;
+  });

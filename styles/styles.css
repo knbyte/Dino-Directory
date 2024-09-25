@@ -69,6 +69,10 @@ footer a {
 /*                          TYPEOGRAPHY                         */
 /****************************************************************/
 
+.searchResult p {
+  color: #0b2415;
+  font-size: 1.1em;
+}
 h1 {
   font-family: "Rubik Bubbles", system-ui;
   font-weight: 400;
@@ -352,6 +356,36 @@ ul {
   list-style-type: none;
 }
 
+/****************************************************************/
+/*                      REFERENCE LIST PAGE                     */
+/****************************************************************/
+
+.references {
+  color: #0b2415;
+}
+
+.references a {
+  color: #0b2415;
+  font-size: 1.2em;
+}
+.references em {
+  font-size: 0.8em;
+}
+
+.references hr {
+  max-width: 250px;
+  margin: 30px auto;
+  border: dotted 1px #0b2415;
+}
+
+/****************************************************************/
+/*                      DINO DIRECTORY PAGE                     */
+/****************************************************************/
+#dinosaurList {
+  color: #0b2415;
+  font-size: 1.3em;
+  line-height: 200%;
+}
 /****************************************************************/
 /*                       BASE GOOGLE FONTS                      */
 /****************************************************************/
