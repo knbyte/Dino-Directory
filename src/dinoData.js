@@ -1,21 +1,20 @@
-/*import dinosaurs from "./dinoData.js";*/
 const dinosaurs = [
   {
     h1: "Plesiosaurus",
     h2: "Plesiosaurs were marine reptiles from the late Triassic Period into the late Cretaceous Period (215 million to 66 million years ago).",
     p: "First named in 1821, more than a hundred valid species have since been described.<br><br> They have paddle-like flippers and unique adaptations for swimming, which is reminiscent of modern-day turtles! Studies suggest that Turtles are actually their closest living relative.",
-    img: "media/plesiosaurus.jpg",
+    img: "media/plesiosaurus_default.jpg",
   },
   {
     h1: "Tyrannosaurus Rex",
     h2: "Hold tight!",
-    p: "One of the largest land carnivores. It could grow up to 40 feet long, and its powerful jaws could crush bones. <br><br> We are working on adding this dinosaur to the directory.",
+    p: "One of the largest land carnivores.<br><br> It could grow up to 40 feet long, and its powerful jaws could crush bones. <br><br> We are working on adding this dinosaur to the directory.",
     img: "media/main_img.svg",
   },
   {
     h1: "Triceratops",
     h2: "Hold tight!",
-    p: "Famous for its three distinct facial horns and large bony frill at the back of its head. <br><br> We are working on adding this dinosaur to the directory.",
+    p: "Famous for its three distinct facial horns.<br><br> Triceratops had a large bony frill at the back of its head. <br><br> We are working on adding this dinosaur to the directory.",
     img: "media/main_img.svg",
   },
   {
@@ -139,47 +138,5 @@ const dinosaurs = [
     img: "media/main_img.svg",
   },
 ];
-function updateSearchResults() {
-  event.preventDefault();
-  let searchtext = document.getElementById("dinoSearch").value;
-  searchtext = searchtext.toLowerCase();
 
-  if (!searchtext) {
-    alert("Please enter a dinosaur or prehistoric creature!");
-    return;
-  }
-
-  let foundDino = false;
-  for (let dino of dinosaurs) {
-    if (dino.h1.toLowerCase().includes(searchtext)) {
-      foundDino = true;
-      newh1 = dino.h1;
-      newh2 = dino.h2;
-      newp = dino.p;
-      newimg = dino.img;
-      break;
-    }
-  }
-
-  if (foundDino) {
-    if (foundDino) {
-      let dinoDiv = document.getElementById("dinoInfo");
-      let h1 = dinoDiv.querySelector("h1");
-      let h2 = dinoDiv.querySelector("h2");
-      let p = dinoDiv.querySelector("p");
-      let img = dinoDiv.querySelector("img");
-
-      h1.innerHTML = newh1;
-      h2.innerHTML = newh2;
-      p.innerHTML = newp;
-      img.src = newimg;
-    } else {
-      console.log(
-        "Sorry, we couldn't find that dinosaur. Please check spelling or see the dino directory."
-      );
-    }
-  }
-}
-
-let element = document.querySelector("input[type=submit]");
-element.addEventListener("click", updateSearchResults);
+export default dinosaurs;
